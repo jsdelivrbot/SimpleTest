@@ -1,0 +1,22 @@
+{
+  "name": "react-template",
+  "version": "1.0.0",
+  "description": "Template for building react applications",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bartbrusselmans/react-template.git"
+  },
+  "author": "Bart Brusselmans",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bartbrusselmans/react-template/issues"
+  },
+  "homepage": "https://github.com/bartbrusselmans/react-template#readme",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}
