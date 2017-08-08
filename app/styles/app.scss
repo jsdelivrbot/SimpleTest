@@ -6,17 +6,3 @@
 @import 'utils/index';
 @import 'variables/index';
 @import 'vendor/index';
-
-$blue: #00f;
-$yellow: #ff0;
-
-.container {
-  background-color: $blue;
-  display: flex;
-  height: 100px;
-  width: 100px;
-
-  &:hover {
-    background-color: $yellow;
-  }
-}
