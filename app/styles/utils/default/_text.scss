@@ -1,0 +1,43 @@
+.u-text-light {
+  font-weight: get-setting(font-weight-light);
+}
+
+.u-text-regular {
+  font-weight: get-setting(font-weight-regular);
+}
+
+.u-text-semi-bold {
+  font-weight: get-setting(font-weight-semi-bold);
+}
+
+.u-text-bold {
+  font-weight: get-setting(font-weight-bold);
+}
+
+.u-text-extra-bold {
+  font-weight: get-setting(font-weight-extra-bold);
+}
+
+.u-text-center {
+  text-align: center;
+}
+
+.u-text-left {
+  text-align: left;
+}
+
+.u-text-right {
+  text-align: right;
+}
+
+.u-capitalize {
+  text-transform: capitalize;
+}
+
+.u-lowercase {
+  text-transform: lowercase;
+}
+
+.u-uppercase {
+  text-transform: uppercase;
+}

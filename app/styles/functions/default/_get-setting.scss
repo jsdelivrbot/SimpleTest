@@ -1,0 +1,7 @@
+@function get-setting($key) {
+  @if global-variable-exists(default-settings) {
+    @return map-get($default-settings, $key);
+  } @else {
+    @return map-get($default-settings, $key);
+  }
+}

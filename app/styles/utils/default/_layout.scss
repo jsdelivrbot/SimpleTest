@@ -1,0 +1,41 @@
+.u-clear {
+  @include clear;
+}
+
+.u-center {
+  @include center;
+}
+
+.u-stretch {
+  @include stretch;
+}
+
+.u-overlay {
+  @include overlay;
+}
+
+.u-fixed-overlay {
+  @include overlay(fixed);
+}
+
+.u-fluid-image,
+.u-stretched-image {
+  display: block;
+  height: auto;
+}
+
+.u-fluid-image {
+  max-width: 100%;
+}
+
+.u-stretched-image {
+  width: 100%;
+}
+
+.u-left {
+  float: left;
+}
+
+.u-right {
+  float: right;
+}

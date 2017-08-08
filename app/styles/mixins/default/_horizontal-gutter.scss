@@ -1,0 +1,7 @@
+@mixin horizontal-gutter ($gutter: get-setting(gutter)) {
+  margin-right: $gutter;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

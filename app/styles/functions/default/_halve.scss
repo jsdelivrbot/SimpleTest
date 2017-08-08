@@ -1,0 +1,3 @@
+@function halve($value) {
+  @return round($value / 2);
+}

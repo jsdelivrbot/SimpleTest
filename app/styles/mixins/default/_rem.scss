@@ -1,0 +1,30 @@
+@mixin rem ($property, $values-list) {
+  $px: ();
+  $rem: ();
+
+  @each $value in $values-list {
+    @if $value == 0 or $value == auto {
+      $px: append($px, $value);
+      $rem: append($rem, $value);
+    } @else {
+      $unit: unit($value);
+
+      @if $unit == 'px' {
+        $px: append($px, $value);
+        $rem: append($rem, px-to-rem($value));
+      }
+
+      @if $unit == 'rem' {
+        $px: append($px, rem-to-px($value));
+        $rem: append($rem, $value);
+      }
+    }
+  }
+
+  @if $px == $rem {
+    #{$property}: $px;
+  } @else {
+    #{$property}: $px;
+    #{$property}: $rem;
+  }
+}
