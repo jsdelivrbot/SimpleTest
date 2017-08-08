@@ -21,7 +21,7 @@ var sassdocOptions = {
  * SOURCEMAPS AND AUTOPREFIXERS COMBINED GIVES ERRORS
  */
 
-// gulp.task('sass', function() {
+// gulp.task('sass', () => {
 //   return gulp
 //     .src('./app/styles/app.scss')
 //     .pipe(sourcemaps.init())
@@ -31,7 +31,7 @@ var sassdocOptions = {
 //     .pipe(gulp.dest('./temp/styles'));
 // });
 
-gulp.task('sass', function() {
+gulp.task('sass', () => {
   return gulp
     .src('./app/styles/app.scss')
     .pipe(sass(sassOptions).on('error', sass.logError))
@@ -39,7 +39,7 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('./temp/styles/'))
 });
 
-gulp.task('sassdoc', function() {
+gulp.task('sassdoc', () => {
   return gulp
     .src('./app/styles/app.scss')
     .pipe(sassdoc(sassdocOptions))
