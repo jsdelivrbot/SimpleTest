@@ -3,50 +3,24 @@ import ReactDOM from 'react-dom';
 import YTSearch from 'youtube-api-search';
 import _ from 'lodash';
 
-import SearchBar from './components/search_bar';
-import VideoList from './components/video_list';
-import VideoDetail from './components/video_detail';
-
-const API_KEY = 'AIzaSyBfpvjW4wAYlSCyn0n1q28J5C8Dic0ss4Q';
-
-
-
-
 class App extends Component {
 
   constructor(props) {
     super(props);
 
     this.state = {
-      videos: [],
-      selectedVideo: null
+
     };
 
-    this.videoSearch('radiohead');
-  }
-
-  videoSearch(term) {
-    YTSearch({key: API_KEY, term: term}, (videos) => {
-      this.setState({
-        videos: videos,
-        selectedVideo: videos[0]
-      });
-    });
   }
 
   render() {
-    const videoSearch = _.debounce((term) => {
-      this.videoSearch(term)
-    }, 300);
 
     return (
       <div>
-        <SearchBar onSearchTermChange={ videoSearch } />
-        <VideoDetail video={this.state.selectedVideo}/>
-        <VideoList
-          onVideoSelect={selectedVideo => this.setState({selectedVideo}) }
-          videos={this.state.videos}
-        />
+        <h2 className="u-text-center u-center">
+          Create your own components and import them in the app.js file.
+        </h2>
       </div>
     );
   }
