@@ -24790,12 +24790,16 @@ var App = function (_Component) {
   }
 
   _createClass(App, [{
-    key: 'render',
+    key: "render",
     value: function render() {
       return _react2.default.createElement(
-        'div',
+        "div",
         null,
-        'React simple starter'
+        _react2.default.createElement(
+          "h2",
+          { className: "u-text-center" },
+          "Create your own components and use them in this template."
+        )
       );
     }
   }]);
