@@ -1,5 +1,6 @@
 var gulp = require('gulp'),
     watch = require('gulp-watch'),
+    historryApiFallback = require('connect-history-api-fallback'),
     browserSync = require('browser-sync').create();
 
 gulp.task('watch', () => {
@@ -7,7 +8,10 @@ gulp.task('watch', () => {
   browserSync.init({
     notify: false,
     server: {
-      baseDir: "temp"
+      baseDir: "temp",
+      middleware: [
+        historryApiFallback()
+      ]
     }
   });
 
