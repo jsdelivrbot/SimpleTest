@@ -1,3 +1,3 @@
-# react-template
+# SimpleTest
 
-My own created template for starting React projects using Gulp and Webpack.
+Simple project just to practice react and redux 

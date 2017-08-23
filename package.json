@@ -4,7 +4,8 @@
   "description": "Template for building react applications",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
+    "test:watch": "npm run test -- --watch"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,8 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-3": "^6.24.1",
     "browser-sync": "^2.18.13",
+    "chai": "^4.1.1",
+    "chai-jquery": "^2.0.0",
     "connect-history-api-fallback": "^1.3.0",
     "gridle": "^2.0.48",
     "gulp": "^3.9.1",
@@ -36,7 +39,9 @@
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.0",
     "gulp-watch": "^4.3.11",
+    "jsdom": "8.1.0",
     "lodash": "^4.17.4",
+    "mocha": "^3.5.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.6",
